@@ -9,6 +9,20 @@ import random
 
 import streamlit.components.v1 as components
 
+meta_tag = """
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="google-adsense-account" content="ca-pub-1325203845191410">
+</head>
+<body>
+</body>
+</html>
+"""
+
+# Use a small height since we just need to inject the meta tag
+components.html(meta_tag, height=0)
+
 st.write("Below is a Google Ad:")
 ad_code = """
 <div style="text-align: center;">
