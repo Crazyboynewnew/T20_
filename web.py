@@ -7,6 +7,17 @@ import numpy as np
 import random
 # model = pickle.load(open('cbr.pkl','rb'))
 
+import streamlit.components.v1 as components
+
+st.write("Below is a Google Ad:")
+ad_code = """
+<div style="text-align: center;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1325203845191410"
+     crossorigin="anonymous"></script>
+</div>
+"""
+components.html(ad_code, height=200)
+
 teams = ['Australia',
          'India',
          'Bangladesh',
